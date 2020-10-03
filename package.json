@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/*.js",
-    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   },
   "keywords": [],
   "author": "Lucas Akira Ayabe <lucas.ayabe@gmail.com>",
