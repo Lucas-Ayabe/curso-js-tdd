@@ -11,6 +11,4 @@ module.exports = {
   div(x, y) {
     return y !== 0 ? x / y : "Não é possível divisão por zero!";
   },
-  foo() {},
-  bar() {},
 };
