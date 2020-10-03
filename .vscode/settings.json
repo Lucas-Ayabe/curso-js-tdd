@@ -7,7 +7,10 @@
     "**/.DS_Store": true,
     "node_modules": true,
     ".eslintrc.json": true,
+    ".huskyrc": false,
     ".gitignore": true,
+    ".eslintignore": true,
+    ".editorconfig": true,
     "package-lock.json": true
   }
 }

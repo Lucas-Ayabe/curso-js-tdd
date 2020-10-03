@@ -5,16 +5,34 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*.spec.js",
+    "test:fast": "npm run test -- --bail",
+    "test:tdd": "npm run test -- --watch",
+    "test:coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "functions": 80,
+    "lines": 80,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "keywords": [],
   "author": "Lucas Akira Ayabe <lucas.ayabe@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.1",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0"
   }
 }
