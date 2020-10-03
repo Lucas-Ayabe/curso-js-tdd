@@ -7,11 +7,6 @@
     "lint": "eslint src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm lint"
-    }
-  },
   "keywords": [],
   "author": "Lucas Akira Ayabe <lucas.ayabe@gmail.com>",
   "license": "ISC",
