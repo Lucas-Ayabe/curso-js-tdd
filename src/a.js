@@ -1,5 +1,5 @@
 const a = "dad";
 
 function a(a) {
-  return 5;
+  return 1;
 }
